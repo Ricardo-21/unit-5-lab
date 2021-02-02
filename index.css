@@ -1,8 +1,15 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 #gameBox {
+    justify-content: center;
     background-color: blue;
     width: 600px;
     height: 600px;
     position: relative;
+    
 }
 .box {
     position: absolute;

@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="gameBox">
-        <div id = 'row1' class=''>
-            <div id="topL" class = 'box col1'></div>
-            <div id="topM" class = 'box'></div>
-            <div id="topR" class = 'box'></div>
-        </div>
-        <div id = 'row2'>
-            <div id = 'midL' class = 'box col1'></div>
-            <div id = 'midM' class = 'box'></div>
-            <div id = 'midR' class = 'box'></div>
-        </div>
-        <div id = 'row3'>
-            <div id = 'bottomL' class = 'box col1'></div>
-            <div id = 'bottomM' class = 'box'></div>
-            <div id = 'bottomR' class = 'box'></div>
+    <div>
+        <h1>Welcome to Tic-Tac-Toe</h1>
+        <div id="gameBox">
+            <div id = 'row1' class=''>
+                <div id="topL" class = 'box col1 d1'></div>
+                <div id="topM" class = 'box col2'></div>
+                <div id="topR" class = 'box col3 d2'></div>
+            </div>
+            <div id = 'row2'>
+                <div id = 'midL' class = 'box col1'></div>
+                <div id = 'midM' class = 'box col2 d1 d2'></div>
+                <div id = 'midR' class = 'box col3'></div>
+            </div>
+            <div id = 'row3'>
+                <div id = 'bottomL' class = 'box col1 d2'></div>
+                <div id = 'bottomM' class = 'box col2'></div>
+                <div id = 'bottomR' class = 'box col3 d1'></div>
+            </div>
         </div>
     </div>
+    <button id="reset">Reset</button>
 </body>
 <script src = 'index.js'></script>
 </html>
