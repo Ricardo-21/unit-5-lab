@@ -4,11 +4,52 @@
     height: 600px;
     position: relative;
 }
-#topL {
-    background-color: red;
+.box {
     position: absolute;
-    height: 200px;
-    width: 200px;
+    border-color: black;
+    border: 3px;
+    border-style: solid; 
+    height: 193px;
+    width: 193px;
+    text-align: center;
+    font-size: 200px;
+}
+
+#topL {
     top: 0px;
     left: 0px;
+}
+#topM {
+    top: 0px;
+    left: 200px;
+}
+#topR {
+    top: 0px;
+    left: 400px;
+}
+
+#midL {
+    top: 200px;
+    left: 0px;
+}
+#midM {
+    top: 200px;
+    left: 200px;
+}
+#midR {
+    top: 200px;
+    left: 400px;
+}
+
+#bottomL {
+    top: 400px;
+    left: 0px;
+}
+#bottomM {
+    top: 400px;
+    left: 200px;
+}
+#bottomR {
+    top: 400px;
+    left: 400px;
 }
