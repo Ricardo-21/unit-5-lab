@@ -16,6 +16,8 @@ const row2 = document.getElementById('row2')
 const row3 = document.getElementById('row3')
 const col1 = document.querySelectorAll(".col1")
 
+const boxes = document.querySelectorAll('.box');
+
 let currentP = 1;
 let col1str = '';
 let col2str = '';
@@ -181,7 +183,7 @@ function checkwinner(x) {
     if(count === 9){
         console.log('draw!');
         gameOver = true;
-        updateDom('o')
+        updateDom('draw')
         return 'draw';
     }
 }
@@ -214,6 +216,7 @@ function updateDom(winner){
         bottomR.innerText = "O"
     }
     else if(winner === 'draw'){
+        boxes.forEach(el => el.style.fontSize = '50px');
         topL.innerText = "DRAW"
         topM.innerText = "DRAW"
         topR.innerText = "DRAW"
@@ -248,6 +251,7 @@ reset.addEventListener('click', () => {
     gameOver = false;
     count = 0;
     currentP = 1;
+    boxes.forEach(el => el.style.fontSize = '200px');
 
     row1.name = undefined
     row2.name = undefined
