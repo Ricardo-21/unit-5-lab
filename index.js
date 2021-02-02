@@ -190,30 +190,32 @@ function checkwinner(x) {
 
 function updateDom(winner){
     if(winner === 'x'){
-        topL.innerText = "X"
-        topM.innerText = "X"
-        topR.innerText = "X"
+        boxes.forEach(el => el.style.fontSize = '50px')
+        topL.innerText = "X Wins"
+        topM.innerText = "X Wins"
+        topR.innerText = "X Wins"
 
-        midL.innerText = "X"
-        midM.innerText = "X"
-        midR.innerText = "X"
+        midL.innerText = "X Wins"
+        midM.innerText = "X Wins"
+        midR.innerText = "X Wins"
     
-        bottomL.innerText = "X"
-        bottomM.innerText = "X"
-        bottomR.innerText = "X"
+        bottomL.innerText = "X Wins"
+        bottomM.innerText = "X Wins"
+        bottomR.innerText = "X Wins"
     }
     else if(winner === 'o'){
-        topL.innerText = "O"
-        topM.innerText = "O"
-        topR.innerText = "O"
+        boxes.forEach(el => el.style.fontSize = '50px')
+        topL.innerText = "O Wins"
+        topM.innerText = "O Wins"
+        topR.innerText = "O Wins"
 
-        midL.innerText = "O"
-        midM.innerText = "O"
-        midR.innerText = "O"
+        midL.innerText = "O Wins"
+        midM.innerText = "O Wins"
+        midR.innerText = "O Wins"
     
-        bottomL.innerText = "O"
-        bottomM.innerText = "O"
-        bottomR.innerText = "O"
+        bottomL.innerText = "O Wins"
+        bottomM.innerText = "O Wins"
+        bottomR.innerText = "O Wins"
     }
     else if(winner === 'draw'){
         boxes.forEach(el => el.style.fontSize = '50px');
