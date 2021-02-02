@@ -18,6 +18,10 @@ const col1 = document.querySelectorAll(".col1")
 
 const boxes = document.querySelectorAll('.box');
 
+const xcount = document.querySelector('#XW')
+const ocount = document.querySelector('#OW')
+const dcount = document.querySelector('#Draws')
+
 let currentP = 1;
 let col1str = '';
 let col2str = '';
@@ -107,13 +111,19 @@ function checkwinner(x) {
         console.log('x won');
         gameOver = true;
         updateDom('x')
+        let num = parseInt(xcount.firstElementChild.innerText);
+        num += 1;
+        xcount.firstElementChild.innerText = `${num}`;
         return 'x'
     }
     if (x.target.parentNode.name === "OOO") {
         // alert('x won')
         console.log('O won');
         gameOver = true;
-        updateDom('x')
+        updateDom('o')
+        let num = parseInt(ocount.firstElementChild.innerText);
+        num += 1;
+        ocount.firstElementChild.innerText = `${num}`;
         return 'o'
     }
 
@@ -121,18 +131,27 @@ function checkwinner(x) {
         console.log('X won');
         gameOver = true;
         updateDom('x')
+        let num = parseInt(xcount.firstElementChild.innerText);
+        num += 1;
+        xcount.firstElementChild.innerText = `${num}`;
         return 'x'
     }
     if(col2str === "XXX"){
         console.log('X won');
         gameOver = true;
         updateDom('x')
+        let num = parseInt(xcount.firstElementChild.innerText);
+        num += 1;
+        xcount.firstElementChild.innerText = `${num}`;
         return 'x'
     }
     if(col3str === "XXX"){
         console.log('X won');
         gameOver = true;
         updateDom('x')
+        let num = parseInt(xcount.firstElementChild.innerText);
+        num += 1;
+        xcount.firstElementChild.innerText = `${num}`;
         return 'x'
     }
     
@@ -140,18 +159,27 @@ function checkwinner(x) {
         console.log('O won');
         gameOver = true;
         updateDom('o')
+        let num = parseInt(ocount.firstElementChild.innerText);
+        num += 1;
+        ocount.firstElementChild.innerText = `${num}`;
         return 'o'
     }
     if(col2str === "OOO"){
         console.log('O won');
         gameOver = true;
         updateDom('o')
+        let num = parseInt(ocount.firstElementChild.innerText);
+        num += 1;
+        ocount.firstElementChild.innerText = `${num}`;
         return 'o'
     }
     if(col3str === "OOO"){
         console.log('O won');
         gameOver = true;
         updateDom('o')
+        let num = parseInt(ocount.firstElementChild.innerText);
+        num += 1;
+        ocount.firstElementChild.innerText = `${num}`;
         return 'o'
     }
 
@@ -159,24 +187,36 @@ function checkwinner(x) {
         console.log('X won')
         gameOver = true;
         updateDom('x')
+        let num = parseInt(xcount.firstElementChild.innerText);
+        num += 1;
+        xcount.firstElementChild.innerText = `${num}`;
         return 'x'
     }
     if(d1str === 'OOO'){
         console.log('O won')
         gameOver = true;
         updateDom('o')
+        let num = parseInt(ocount.firstElementChild.innerText);
+        num += 1;
+        ocount.firstElementChild.innerText = `${num}`;
         return 'o'
     }
     if(d2str === 'XXX'){
         console.log('X won')
         gameOver = true;
         updateDom('x')
+        let num = parseInt(xcount.firstElementChild.innerText);
+        num += 1;
+        xcount.firstElementChild.innerText = `${num}`;
         return 'x'
     }
     if(d2str === 'OOO'){
         console.log('O won')
         gameOver = true;
         updateDom('o')
+        let num = parseInt(ocount.firstElementChild.innerText);
+        num += 1;
+        ocount.firstElementChild.innerText = `${num}`;
         return 'o'
     }
     
@@ -184,6 +224,9 @@ function checkwinner(x) {
         console.log('draw!');
         gameOver = true;
         updateDom('draw')
+        let num = parseInt(dcount.firstElementChild.innerText);
+        num += 1;
+        dcount.firstElementChild.innerText = `${num}`;
         return 'draw';
     }
 }
