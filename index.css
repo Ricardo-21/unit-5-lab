@@ -60,6 +60,6 @@ body {
     top: 400px;
     left: 400px;
 }
-#reset {
+.button {
    width: 200px;
 }
