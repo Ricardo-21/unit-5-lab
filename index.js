@@ -82,8 +82,6 @@ function placeXO(event){
                 count += 1;
             }
         }
-        // event.target.parentNode.name += 'f'
-        // console.log(row1)
         checkwinner(event);
     }
 }
