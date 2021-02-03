@@ -2,10 +2,11 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    font-family: sans-serif;
 }
 #gameBox {
     justify-content: center;
-    background-color: blue;
+    background-color: whitesmoke;
     width: 600px;
     height: 600px;
     position: relative;

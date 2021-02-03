@@ -103,7 +103,6 @@ bottomM.addEventListener('click', placeXO);
 bottomR.addEventListener('click', placeXO);
  
 function checkwinner(x) {
-    console.log(col1str)
     if (x.target.parentNode.name === "XXX") {
         // alert('x won')
         console.log('x won');
